@@ -1,0 +1,2024 @@
+                                                      INDEX
+	Abbreviations…………………………………………………................................
+	Protocols & port no……………………………………………............................
+	Definitions……………………………………………………...................................
+	Introduction……………………………………………………................................
+	Password in cisco routers……………………………………...........................
+	Routing...........................................................................................................                 
+♦	Connected network…………………………………...............................
+♦	Static routing configuration & verification…….........................
+	Static floating routing.............................................................
+♦	Dynamic routing............................................................................
+	RIP..................................................................................................
+	EIGRP…………………………………………..................................
+	OSPF…...........................................................................................
+	Default routing……………………………………………….................................
+	Route Redistribution.......................................................................................
+	 EIGRP-RIP…………………………………………........................
+	OSPF-EIGRP……………………………………….........................
+	OSPF-RIP…..................................................................................
+	RIP-EIGRP-OSPF.......................................................................
+	Network Address Translation (NAT)
+	 Static NAT……………………………………................................
+	Dynamic NAT………………………………..................................
+	Dynamic NAT Overload/PAT…...........................................
+	DHCP………………………………………………………...........................................
+	DHCP Snooping…………………………………………….....................................
+	Dynamic ARP Inspection………………………………….................................
+	Syslog…………………………………………………………......................................
+	Port Security…………………………………………………...................................
+	VLAN………………………………………………………….......................................
+	VTP…………………………………………………………..........................................  
+	TELNET ………………………………………………………………………………...      
+
+
+
+
+                            ABBREVIATIONS & FULL FORMS: -
+
+1	ACL	:	Access Control List
+2	ARP	:	Address Resolution Protocol
+3	BPDU	:	Broadcast Protocol Datagram unit
+4	CAN	:	Campus Area Network
+5	CPU	:	Central Processing Unit
+6	CRC	:	Cyclic Redundancy Check
+7	CAM	:	Content Addressable Memory
+8	CCNA	:	Cisco Certified Network Associate
+9	DHCP	:	Dynamic Host Configuration Protocol
+10	DNS	:	Domain Name Service
+11	DAI	:	Dynamic ARP Inspection
+12	DDOS	:	Distribute Denial of Service
+13	DOS	:	Denial Of Service
+14	EIGRP	:	Enhanced interior Gateway Routing Protocol
+15	EGP	:	External Gateway Protocol
+16	FTP	:	File Transfer Protocol
+17	FTPS	:	File Transfer Protocol over Protocol
+18	FQDN	:	Fully Qualified Domain Name
+19	FCS	:	Frame Check Sequence
+20	GARP	:	Gratuitous Address Resolution Protocol
+21	HTTP	:	Hyper Text Transfer Protocol
+22	HRC	:	Horizontal redundancy Check
+23	HTTPS	:	Hyper Text Transfer Protocol Secured
+24	IGP	:	Internal Gateway Protocol
+25	IOS	:	Interworking Operating System
+26	ICMP	:	Internet Control Message Control Protocol
+27	IEEE	:	Institute of Electric and Electronic Engineering
+28	ISO	:	International Standard Organization
+29	IP	:	Internet Protocol
+30	IMAP	:	Internet Message Access Protocol
+31	IGMP	:	Internet Group Message Protocol
+32	IANA	:	Internet Assigned Numbered Authority
+
+
+
+
+33	LAN	:	Local Area Network
+34	MAN	:	Metropolitan Area Network
+35	MTU	:	Maximum Transmission Unit
+36	NAT	:	Network Address Translation
+37	NV RAM	:	Non-Volatile RAM
+38	NTP	:	Network Time Protocol
+39	OSPF	:	Open Shortest Path First
+40	OSI model	:	Open System Interconnect model
+41	PING	:	Packet Internet Network Group
+42	PAT	:	Port Address Translation
+43	PAN	:	Personal Area Network
+44	PPS	:	Packet Per Second
+45	POST	:	Power On Self-Test
+46	POP	:	Post Office Protocol
+47	RAM	:	Read Access Memory
+48	ROM	:	Read Only Memory
+49	RIP	:	Routing Information Protocol
+50	RSA	:	Rivest, Shamir, Adleman
+51	SMTP	:	Simple Mail Transfer Protocol
+52	SSH	:	Secured Shell
+53	SFTP	:	SSH File Transfer Protocol
+54	SSL	:	Secured Socket Layer
+55	STP	:	Spanning Tree Protocol
+56	TTL	:	Time To Live
+57	Telnet	:	Teletype network
+58	TFTP	:	Trivial File Transfer Protocol
+59	TCP	:	Transmission Control Protocol
+60	UDP	:	User Datagram Protocol
+61	VLAN	:	Virtual Local Area Network
+62	VRC	:	Vertical Redundancy Check
+63	WAN	:	Wide Area Network
+64	WLAN	:	Wireless Local Area Network
+65	VTY	:	Virtual Teletype
+
+
+
+
+                             
+                             PROTOCOLS AND PORT NUMBERS
+1	TCP(FTP)	:	20,21
+2	SSH	:	22
+3	FTP CONTROL	:	21
+4	FTP DATA	:	20
+5	TELNET	:	23
+6	SMTP	:	25
+7	DNS	:	53
+8	HTTP	:	80
+9	HTTPS	:	443
+10	POP3	:	110
+11	IMAP4	:	143
+12	DNS	:	53
+13	DHCP SERVER(IPV4)	:	67
+14	DHCP CLIENT(IPV4)	:	68
+15	TFTP	:	69
+16	RPC	:	111
+17	NTP	:	123
+18	BOOTP	:	67
+19	RDP	:	3389
+20	BGP	:	179
+21	NNTP	:	119
+22	SNMP	:	161,162
+23	LDAP	:	389
+24	ISAKMP	:	500
+25	LDPAS	:	636
+26	TLS/SSL	:	989/990
+27	DHCP SERVER(IPV6)	:	547
+28	DHCP CLIENT(IPV6)	:	546
+29	SFTP	:	115
+
+
+
+
+
+
+
+
+
+
+
+
+30	ECHO	:	7
+31	TIME	:	37
+32	OSPF	:	89
+33	PAT	:	4097
+34	RIP	:	520
+35	STP	:	128
+36	EIGRP	:	88
+37	EGP	:	8
+38	ICMP	:	7
+39	PPTP	:	1723
+40	SYSLOG	:	514
+41	FTPS	:	990
+42	SFTP	:	22
+43	IRC	:	194
+44	NFS	:	2049
+45	IRC	:	194
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                      DEFINATIONS
+•	Vulnerability:-  the quality or state of being exposed to the possibility of being attacked or harmed, either physically or emotionally.
+
+•	Risk :- A risk is a person or thing that is insured against as it may be harmed, damaged, or lost. 
+
+
+•	Attack :- An attack is an information security threat that involves an attempt to obtain, alter, destroy, remove, implant or reveal information without authorized access or permission.
+
+•	Exploit :- An exploit is a program, or piece of code, designed to find and take advantage of a security flaw or vulnerability in an application or computer system, typically for malicious purposes such as installing malware. An exploit is not malware itself, but rather it is a method used by cybercriminals to deliver malware.
+
+•	Threat:- threat is a malicious act that seeks to damage data, steal data, or disrupt digital life in general. Cyber threats include computer viruses, data breaches, Denial of Service (DoS) attacks, and other attack vectors.
+
+•	Spoofing Attack:- Spoofing in cybersecurity involves scammers pretending to be someone else to steal data or money or to spread malware. Learn the risks of spoofing attacks. 
+   
+
+
+
+     
+                 
+•	Chipertext:-In cryptography, a ciphertext-only attack (COA) or known ciphertext attack is an attack model for cryptanalysis where the attacker is assumed to have access only to a set of ciphertexts.     
+
+•	Bug :-The word bug is used loosely to mean an insect or creature that resembles an insect. Bug is also used to mean a glitch or imperfection, as in a computer program …
+
+•	Cryptography :- Cryptography is associated with the process of converting ordinary plain text into unintelligible text and vice-versa.
+
+•	Data integrity :- data integrity means making sure the data remains intact and unchanged throughout its entire life cycle.
+
+•	Data breach :- A data breach is an incident where information is stolen or taken from a system without the knowledge or authorization of the system's owner.
+
+•	DDOS :- DDoS (Distributed Denial of Service) is a category of malicious cyber-attacks that hackers or cybercriminals employ in order to make an online service, network resource or host machine unavailable to its intended users on the Internet.
+
+•	Firewall :-     A firewall is a network security device that monitors incoming and outgoing network traffic and decides whether to allow or block specific traffic based on a defined set of security rules.
+
+
+
+
+
+
+
+•	IDS :- n intrusion detection system (IDS) is a system that monitors network traffic for suspicious activity and alerts when such activity is discovered.
+
+•	IPS :- An intrusion prevention system (IPS) is a network security tool (which can be a hardware device or software) that continuously monitors a network for malicious activity and takes action to prevent it, including reporting, blocking, or dropping it, when it does occur.
+                    
+•	ISP:- Internet service provider (ISP), company that provides Internet connections and services to individuals and organizations. In addition to providing access to the Internet, ISPs may also provide software packages (such as browsers), e-mail accounts, and a personal Web site or home page.
+
+•	Encryption and Decryption:- Encryption is the process of converting normal message (plaintext) into meaningless message (Ciphertext). Whereas Decryption is the process of converting meaningless message (Ciphertext) into its original form (Plaintext)
+
+•	Keylogger:- Keyloggers are activity-monitoring software programs that give hackers access to your personal data. ... The software is installed on your computer, and records everything you type. Then it sends this log file to a server, where cybercriminals wait to make use of all this sensitive information.
+
+
+
+
+
+•	Ransomware:- Ransomware is malware that employs encryption to hold a victim's information at ransom. ... A ransom is then demanded to provide access. Ransomware is often designed to spread across a network and target database and file servers, and can thus quickly paralyze an entire organization.
+
+•	Social engineering :- Social engineering is the act of exploiting human weaknesses to gain access to personal information and protected systems. Social engineering relies on manipulating individuals rather than hacking computer systems to penetrate a target's account.
+
+•	Spyware :- Spyware is any software that installs itself on your computer and starts covertly monitoring your online behavior without your knowledge or permission. Spyware is a kind of malware that secretly gathers information about a person or organization and relays this data to other parties.
+
+•	Worm :- A computer worm is a malicious, self-replicating software program (popularly termed as 'malware') which affects the functions of software and hardware programs. Description: It fits the description of a computer virus in many ways. For example, it can also self-replicate itself and spread across networks.
+
+•	Phishing :- “Phishing” is a scam where thieves attempt to steal personal or financial account information by sending deceptive electronic messages that trick unsuspecting consumers into disclosing personal information.
+
+
+
+
+                           
+
+
+                                                   TYPES OF ATTACK
+
+Active attack :- An active attack is a network exploit in which a hacker attempts to make changes to data on the target or data en route to the target. ... Attackers may attempt to insert data into the system or change or control data that is already in the system.
+Examples:-  Masquerade attack · Session hijacking attack · Message modification attack · DoS attack.
+Passive attack :-In a passive attack, an intruder monitors a system and network communications and scans for open ports and other vulnerabilities.
+Examples:-  Wireshark, emails or telephone calls. · Encryption. Intercepting 
+Close in attack :- An attacker who is watching users type in their user names and passwords is performing a close-in attack. Insider attacks involve a user who normally has some form of access to the target system.
+ Example:-, an employee transferring confidential information to an unauthorized site is considered an insider attack.
+Insider attack :- nsider attacks are launched by malicious users who are entrusted with authorized (i.e., insider) access of a system. From stealing corporate data to propagating malware, it is known that insider attacks.
+Example:- 1. Attorneys steal and destroy data from their law firm. · 
+2. Former IT administrator steals company data. 
+Distributive attack :-  distributed denial-of-service (DDoS) attack is a malicious attempt to disrupt the normal traffic of a targeted server, service or network by overwhelming the target or its surrounding infrastructure with a flood of Internet traffic.
+Example:-  UDP flooding, SYN flooding and DNS amplification
+
+
+
+
+                                                   INTRODUCTION
+
+Identifying Cisco Devices & Interface:
+Cisco 1841 Router: Cisco 1841 integrated Services Router is part of the Cisco 1800 Integrated Services Router Series. Cisco 1841 router offers embedded hardware- based encryption that enabled by an optional Cisco IOS Software security image.
+WAN Ports: A WAN port is used to connect to an internet source, such as broadband modem
+Smart Serial Port: It is used to access the router console for administration and configuration.
+LAN Ports: A LAN port is also known as an Ethernet port.
+Fast Ethernet Port: Ethernet cables are used to provide an internet connection, connect devices to a local network.
+Speed: 100 Mbps
+ADMIN ports:
+AUX ports: This port is commonly used as a dial-up port for remote management.
+CONSOLE ports: Console port is used to connect a computer directly to the router or switch and manage the router or switch since there is no display device for a router or switch.
+Cisco 2960 Catalyst Switch: Catalyst switches offer advanced customization and manageability. CONSOLE ports: console port is used to connect a computer directly to a router or switch and manage the router or switch since there is no display device for a router or switch.
+FAST-ETHERNET ports: Fast Ethernet is an extension of the 10-megabit Ethernet standard.
+Cables used:
+Smart Serial Cable: A serial cable is a cable used to transfer information between two devices using a serial communication protocol.
+Fast Ethernet Cable: It is an extension of the 10-megabit Ethernet standard. 
+
+                                       PASSWORDS IN CISCO ROUTERS
+
+There are five types of passwords: 
+1. Enable password
+2. Enable secret password 
+3. Console password 
+4. Auxiliary password
+ 5. VTY password (Virtual Terminal) 
+1. Enable password: This password is used when you want to enter to privilege mode from user mode
+ Syntax:  
+Router>Enable
+Router# Configure Terminal
+Router(config)# host Kukatpally
+Kukatpally(config)# password Jet@123#
+Kukatpally(config) #exit
+
+
+2. Secret Password: This password is used when you want to change to privilege mode from user mode 
+Syntax:
+Router>Enable
+Router# Configure Terminal
+Router(config)# host Kukatpally
+Kukatpally(config)# Enable secrete Jet@123#
+Kukatpally(config) #exit
+
+
+
+
+
+
+
+
+
+3. Console Password: This password is used to enter on-premises. 
+Syntax:
+Router>Enable
+Router# Configure Terminal
+Router(config)# host Kukatpally
+Kukatpally(config)# Line console 0
+Kukatpally(config-line) #Password Jet@123#
+Kukatpally(config-line) #login
+Kukatpally(config-line) #exit
+
+4. Auxiliary Password: This password is used to enter into router remotely Syntax:
+Router>Enable
+Router# Configure Terminal
+Router(config)# host Kukatpally
+Kukatpally(config)# Line Auxiliary 0
+Kukatpally(config-line) #Password Jet@123#
+Kukatpally(config-line) #login
+Kukatpally(config-line) #exit
+
+5. VTY Password: (Virtual Terminal): It refers to telnet password by using telnet you can access the router and can change anything.
+ Syntax:
+Router>Enable
+Router# Configure Terminal
+Router(config)# host Kukatpally
+Kukatpally(config)# Line Vty 0 4
+Kukatpally(config-line) #Password Jet@123#
+Kukatpally(config-line) #login
+Kukatpally(config-line) #exit
+
+
+
+
+
+
+
+
+5. Encrypting cisco passwords: 
+•	By default, all the passwords of cisco are in readable format in config file.
+•	“Service password-encryption” is a command used to encrypt cisco passwords (except secret). 
+Syntax
+Router(config)# service password-encryption
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          
+                                                           ROUTING
+Choosing the best path or transmitting the data from source to destination is called routing ways Routing ways: 
+1. Connected network
+ 2. Static routing 
+3. Dynamic routing 
+4. Default routing  
+1.Connected network 
+
+Router-1: 
+Assigning IP Address to Fast Ethernet0/0
+•	In this case both the networks are directly connected router interface.
+•	In this following figure above PC0 ,PC1,PC2 is connected to 10.0.0.1 and it is directly connected to fast ethernet 0/0 and PC3,PC4,PC5 is connected to fast ethernet 0/1 with 20.0.0.1 and PC15,PC16,PC17 is connected fast ethernate 1/1 with 30.0.0.1 and PC12,PC13,PC14 is connected fast ethernate 1/0 with 40.0.0.1.
+•	A router will automatically route packets between there connected network.
+Fast Eternate 0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 10.0.0.4 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Fast Eternate 0/1:
+Router(config)#interface fast Ethernet 0/1
+Router(config-int) #ip address 20.0.0.4 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Fast Ethernate 1/1:
+Router(config)#interface fast Ethernet 1/1
+Router(config-int) #ip address 30.0.0.4 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+FAst Ethernate 1/0:
+Router(config)#interface fast Ethernet 1/0
+Router(config-int) #ip address 40.0.0.4 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+ 
+ 
+
+2. Static Routing: 
+•	 In this router are configure manually to the routers. 
+•	 The administrator must configure all the possible routes for each and every router to ensure full connectivity. 
+•	If any link goes down, the router will not take alternate path, administrator as to change the path manually.                                                                            
+SYNTEX:
+ STATIC ROUTING CONFIGURATION
+ 
+
+
+
+
+Router-1: 
+Assigning IP Address to Fast Ethernet0/0
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 10.0.0.1 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Assigning IP Address to Serial0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/0
+Router(config-int) #ip address 11.0.0.1 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Configuring Static Routing:
+Router(config)#ip route 192.168.0.0 255.255.255.0 11.0.0.2
+Router(config)#ip route 172.16.0.0 255.255.0.0 11.0.0.2
+
+Router-2: 
+Assigning IP Address to Fast Ethernet0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 192.168.0.1 255.255.255.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+
+
+
+
+Assigning IP Address to Serial0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/0
+Router(config-int) #ip address 11.0.0.2 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Assigning IP Address to Serial0/1:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/1
+Router(config-int) #ip address 12.0.0.1 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Configuring Static Routing:
+Router(config)#ip route 10.0.0.0 255.0.0.0 11.0.0.1
+Router(config)#ip route 172.16.0.0 255.255.0.0 12.0.0.2
+
+
+
+
+
+
+
+
+
+
+Router-3: 
+Assigning IP Address to Fast Ethernet0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 172.16.0.1 255.255.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Assigning IP Address to Serial0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/0
+Router(config-int) #ip address 12.0.0.2 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+
+Configuring Static Routing:
+Router(config)#ip route 10.0.0.0 255.0.0.0 12.0.0.1
+Router(config)#ip route 192.168.0.0 255.255.255.0 12.0.0.1
+
+ 
+  
+
+ROUTER2 PC0 TO PC5
+ 
+
+ROUTER3 PC2 TO PC0
+ 
+ROUTER4 PC5 TO PC0
+ 
+
+
+
+        
+
+
+
+
+
+
+
+
+
+ 2. STATIC FLOATING ROUTING
+ 
+
+ 
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+3. Dynamic Routing:
+ It is also called adaptive routing, is a process where a router can forward data via       a different route or given destination based on the current conditions of the communication circuits within a system. There are three types of dynamic routing protocols, they are
+•	 RIP
+•	 EIGRP
+•	 OSPF
+ ROUTING INFORMATION PROTOCOL (RIP): Rip uses a distance vector algorithm to decide which path to put a packet on to get to its destination
+ 
+
+
+
+
+
+RIP Configuration:
+Router-1: Assigning IP Address to Fast Ethernet0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 192.168.0.1 255.255.255.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Assigning IP Address to Serial0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/0
+Router(config-int) #ip address 192.168.1.0 255.255.255.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Configuring RIP Routing
+Router(config)#Router rip
+Router(config-int) #Network 192.168.0.0 
+Router(config-int) #Network 192.168.1.0
+Router(config-int) #exit
+Router(config)#
+
+Router-2: Assigning IP Address to Fast Ethernet0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 192.168.2.1 255.255.255.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+
+
+Assigning IP Address to Serial0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/0
+Router(config-int) #ip address 192.168.1.0 255.255.255.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Assigning IP Address to Serial0/1:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/1
+Router(config-int) #ip address 192.168.3.0 255.255.255.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Configuring RIP Routing:
+Router(config)#Router rip
+Router(config-int) #Network 192.168.0.0 
+Router(config-int) #Network 192.168.1.0
+Router(config-int) #Network 192.168.3.0
+Router(config)#
+
+Router-3: Assigning IP Address to Fast Ethernet0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 192.168.4.1 255.255.255.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+
+Assigning IP Address to Serial0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/0
+Router(config-int) #ip address 192.168.3.0 255.255.255.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Configuring RIP Routing
+Router(config)#Router rip
+Router(config-int) #Network 192.168.4.0
+Router(config-int) #Network 192.168.3.0
+Router(config-int) #exit
+Router(config)#
+
+
+
+ 
+
+
+
+    
+
+
+
+ 
+
+
+
+Enhanced Interior Gateway Routing Protocol (EIGRP):
+•	 Enhanced Interior Gateway Routing Protocol distance vector routing protocol. EIGRP has faster convergence and fewer network overheads. It sends traditional distance vector updates containing information about networks including the cost of reaching them from the perspective of the advertising router .
+•	EIGRP synchronizes routing table between neighbors at the startup and then it sends specific updates when there is change in the network topology.
+Syntax:
+Router(config)#router eigrp< Autonomous system number>
+Router(config)#router network <IP Network><Wildcard mask>or<Subnet mask>
+
+EIGRP Configuration:
+
+ 
+Router-1:
+Assigning IP Address to Fast Ethernet0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 10.0.0.1 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Assigning IP Address to Serial0/0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/ 0/0
+Router(config-int) #ip address 11.0.0.1 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Configuring EIGRP Routing:
+Router(config)#Router  eigrp 40
+Router(config-int) #Network 10.0.0.0 0.255.255.255
+Router(config-int) #Network 11.0.0.0 0.255.255.255
+Router(config-int) #exit
+Router(config)#
+
+Router-2:
+Assigning IP Address to Fast Ethernet0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 20.0.0.1 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Assigning IP Address to Serial0/0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/ 0/0
+Router(config-int) #ip address 11.0.0.2 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Configuring EIGRP Routing:
+Router(config)#Router  eigrp 40
+Router(config-int) #Network 20.0.0.0 0.255.255.255
+Router(config-int) #Network 11.0.0.0 0.255.255.255
+Router(config-int) #exit
+Router(config)#
+
+ 
+ 
+ 
+
+
+ 
+
+
+Open Shortest Path First (OSPF): 
+•	OSPF provides a Fast Convergence with incremental updates via Link State Advertisements (LSA’s).
+•	 OSPF is a classless protocol and allows a hierarchical design.
+ OSPF configuration:
+
+ 
+
+
+
+
+
+Router-1:
+Assigning IP Address to Fast Ethernet0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 30.0.0.1 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Assigning IP Address to Serial0/0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/ 0/0
+Router(config-int) #ip address 13.0.0.1 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Configuring OSPF Routing:
+Router(config)#Router Ospf  100
+Router(config-int) #Network 30.0.0.0 0.255.255.255 area 0
+Router(config-int) #Network 13.0.0.0 0.255.255.255 area 0 
+Router(config-int) #exit
+Router(config)#
+
+Router-2:
+Assigning IP Address to Fast Ethernet0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 40.0.0.1 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Assigning IP Address to Serial0/0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/ 0/0
+Router(config-int) #ip address 13.0.0.2 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Configuring OSPF Routing:
+Router(config)#Router Ospf  100
+Router(config-int) #Network 40.0.0.0 0.255.255.255 area 0
+Router(config-int) #Network 13.0.0.0 0.255.255.255 area 0 
+Router(config-int) #exit
+Router(config)#
+
+ 
+ 
+ 
+
+ 
+
+
+
+
+ 
+4. Default Routing
+•	 Default routing is a packet forwarding method taking effect when no other route can determine for a given destination address. All the packets for destination not established in the routing table or sent through the default route.
+ Syntax:
+Ip route<Destnation network ID><Subnet mask><Next hop address>
+
+                                                                                   OR
+Ip route<Destination Network ID><Subnet mask><Data existing interface>
+
+                                                                                   OR
+Ip Default –network<local Network Id>
+
+
+ 
+
+Router-1:
+Assigning IP Address to Fast Ethernet0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 10.0.0.2 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Assigning IP Address to Serial0/0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/0/0
+Router(config-int) #ip address 11.0.0.1 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Default Routing:
+Router(config-int) #ip route 0.0.0.0 0.0.0.0 11.0.0.2
+Router(config)#
+
+Router-2:
+Assigning IP Address to Fast Ethernet0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 20.0.0.1 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+
+
+Assigning IP Address to Serial0/0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/0/0
+Router(config-int) #ip address 11.0.0.2 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Assigning IP Address to Serial0/0/1:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/0/1
+Router(config-int) #ip address 12.0.0.1 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Default Routing:
+Router(config) #ip route 0.0.0.0 0.0.0.0 11.0.0.1
+Router(config) #ip route 0.0.0.0 0.0.0.0 12.0.0.2
+
+Router-3:
+Assigning IP Address to Fast Ethernet0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 30.0.0.1 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+
+
+
+Assigning IP Address to Serial0/0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/0/0
+Router(config-int) #ip address 12.0.0.2 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Default Routing:
+Router(config-int) #ip route 0.0.0.0 0.0.0.0 12.0.0.1
+Router(config)#
+
+Viewing the Routing Information Table:
+ 
+ 
+ 
+
+
+
+ 
+ 
+ 
+
+
+                                                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Route Redistribution:
+ It is a technique that allows routes learned by one routing protocol or algorithm to be advertised into another routing protocol algorithm. 
+RIP-EIGRP:
+ 
+
+
+
+
+
+
+
+Router-1: 
+Assigning IP Address to Fast Ethernet0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 172.16.0.1 255.255.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Assigning IP Address to Serial0/0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/0/0
+Router(config-int) #ip address 10.0.0.1 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Configuring RIP Routing:
+Router(config) #router rip
+Router(config-router) #Network 172.16.0.0
+Router(config-router) #Network 10.0.0.0
+Router(config-router) #exit
+Route(config) #
+
+Router-3: 
+Assigning IP Address to Fast Ethernet0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 172.18.0.1 255.255.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Assigning IP Address to Serial0/0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/0/0
+Router(config-int) #ip address 11.0.0.2 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Configuring EIGRP Routing:
+Router(config) #router eigrp 44
+Router(config-router) #Network 172.18.0.0 0.0.255.255
+Router(config-router) #Network 11.0.0.0 0.255.255.255
+Router(config-router) #exit
+Route(config) #
+
+Router-2: 
+Assigning IP Address to Fast Ethernet0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 172.17.0.1 255.255.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Assigning IP Address to Serial0/0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/0/0
+Router(config-int) #ip address 10.0.0.2 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+
+Assigning IP Address to Serial0/0/1:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/0/0
+Router(config-int) #ip address 11.0.0.1 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Configuring RIP Routing:
+Router(config) #router rip
+Router(config-router) #Network 172.17.0.0
+Router(config-router) #Network 10.0.0.0
+Router(config-router) #exit
+Route(config) #
+
+Configuring EIGRP Routing:
+Router(config) #router eigrp 44
+Router(config-router) #Network 172.17.0.0 0.0.255.255
+Router(config-router) #Network 11.0.0.0 0.255.255.255
+Router(config-router) #exit
+Route(config) #
+
+Configuring RIP-EIGRP Redistribution:
+Router(config) #router rip
+Router(config-router) #redistribute eigrp 44 metric 1
+Router(config-router) #exit
+Router(config) #router eigrp 44
+Router(config-router) # redistribute rip metric 5000 1 250 2 300
+Router(config-int) #exit
+Router(config)#
+
+
+
+
+Viewing the Routing Information Table:
+ 
+ 
+ 
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+EIGRP-OSPF:
+ 
+
+
+Router-1: 
+Assigning IP Address to Fast Ethernet0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 192.168.10.1 255.255.255.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Assigning IP Address to Serial0/0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/0/0
+Router(config-int) #ip address 11.0.0.1 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Configuring EIGRP Routing:
+Router(config) #router eigrp 55
+Router(config-router) #Network 192.168.10.0 0.255.255.255
+Router(config-router) #Network 11.0.0.0 0.255.255.255
+Router(config-router) #exit
+Route(config) #
+
+Router-3: 
+Assigning IP Address to Fast Ethernet0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 172.16.10.1 255.255.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Assigning IP Address to Serial0/0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/0/0
+Router(config-int) #ip address 12.0.0.2 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Configuring OSPF Routing:
+Router(config) #router ospf 20
+Router(config-router) #Network 172.16.10.0 0.0.255.255
+Router(config-router) #Network 12.0.0.0 0.255.255.255
+Router(config-router) #exit
+Route(config) #
+
+Router-2: 
+Assigning IP Address to Fast Ethernet0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 192.168.20.1 255.255.255.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Assigning IP Address to Serial0/0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/0/0
+Router(config-int) #ip address 11.0.0.2 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Configuring EIGRP Routing:
+Router(config) #router eigrp 55
+Router(config-router) #Network 192.168.20.0 0.255.255.255
+Router(config-router) #Network 11.0.0.0 0.255.255.255
+Router(config-router) #exit
+Route(config) #
+
+
+
+
+
+
+
+Configuring OSPF Routing:
+Router(config) #router ospf 20
+Router(config-router) #Network 192.168.20.0 0.255.255.255
+Router(config-router) #Network 12.0.0.0 0.255.255.255
+Router(config-router) #exit
+Route(config) #
+
+Configuring EIGRP-OSPF Redistribution:
+Router(config) #router rip
+Router(config-router) #redistribute ospf 20 metric 1 2 255 230 25
+Router(config-router) #exit
+Router(config) #router Ospf 20
+Router(config-router) # redistribute eigrp metric 12 subnets
+Router(config-int) #exit
+Router(config)#
+
+Viewing the Routing Information Table:
+ 
+
+
+
+
+ 
+ 
+ 
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+OSPF-RIP:
+
+ 
+ 
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+OSPF-RIP-EIGRP
+
+ 
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+ 
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                          NETWORK ADDRESS TRANSLATION(NAT)
+It is used to resolve a private ip to public ip and vice versa
+The different type of nat are:
+•	Static Nat
+•	Dynamic Nat
+•	Dynamic Nat overload/pat
+Static Nat:
+ 
+
+
+
+
+Router-1: 
+Assigning IP Address to Fast Ethernet0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 192.168.10.1 255.255.255.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Assigning IP Address to Serial0/0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/ 0/0
+Router(config-int) #ip address 11.0.0.1 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Configuring RIP Routing:
+Router>Enable
+Router# Configure Terminal
+Router(config)#router rip
+Router(config-int) #network 192.168.10.0
+Router(config-int) #network 11.0.0.0
+Router(config-int) #exit
+Router(config)#
+
+
+Static NAT Configuration:
+Router(config)#ip Nat inside source static 192.168.10.2 60.0.0.1
+
+
+
+
+Implimentation:
+Router (config)#interface fastethernate0/0
+Router(config-int) #ip Nat inside
+Router(config)#exit
+Router(config) #interface serial0/0/0
+Router(config-int) #ip Nat outside
+Router(config-int) #exit
+Router(config)#
+
+Router-2: 
+Assigning IP Address to Fast Ethernet0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 192.168.20.1 255.255.255.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Assigning IP Address to Serial0/0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/ 0/0
+Router(config-int) #ip address 11.0.0.2 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Configuring RIP Routing:
+Router>Enable
+Router# Configure Terminal
+Router(config)#router rip
+Router(config-int) #network 192.168.20.0
+Router(config-int) #network 11.0.0.0
+Router(config-int) #exit
+Router(config)#
+
+Verification of nat table:
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+                                                Dynamic Nat:
+ Router-1: 
+Assigning IP Address to Fast Ethernet0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 192.168.10.1 255.255.255.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+
+
+
+Assigning IP Address to Serial0/0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/ 0/0
+Router(config-int) #ip address 11.0.0.1 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Configuring RIP Routing:
+Router>Enable
+Router# Configure Terminal
+Router(config)#router rip
+Router(config-int) #network 192.168.10.0
+Router(config-int) #network 11.0.0.0
+Router(config-int) #exit
+Router(config)#
+
+Dynamic NAT Configuration:
+Router(config-int) # access-list 45 permit 192.168.10.0 0.0.0.255
+Router(config-int) # ip nat pool deepa 60.0.0.1 60.0.0.30 netmask 255.0.0.0
+Router(config-int) # ip nat inside source list 45 pool deepa
+Router(config)#exit
+
+Implimentation:
+Router (config)#interface fastethernate0/0
+Router(config-int) #ip Nat inside
+Router(config)#exit
+Router(config) #interface serial0/0/0
+Router(config-int) #ip Nat outside
+Router(config-int) #exit
+Router(config)#
+
+
+
+Router-2: 
+Assigning IP Address to Fast Ethernet0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 192.168.20.1 255.255.255.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Assigning IP Address to Serial0/0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/ 0/0
+Router(config-int) #ip address 11.0.0.1 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Configuring RIP Routing:
+Router>Enable
+Router# Configure Terminal
+Router(config)#router rip
+Router(config-int) #network 192.168.10.0
+Router(config-int) #network 11.0.0.0
+Router(config-int) #exit
+Router(config)#
+
+
+
+
+
+
+
+Verification of Dynamic nat table:
+ 
+ 
+
+
+
+
+                                 Dynamic NAT Overload
+
+ 
+  Router-1: 
+Assigning IP Address to Fast Ethernet0/0: 
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 192.168.10.1 255.255.255.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+           
+
+
+Assigning IP Address to Serial0/0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/ 0/0
+Router(config-int) #ip address 11.0.0.1 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Configuring RIP Routing:
+Router>Enable
+Router# Configure Terminal
+Router(config)#router rip
+Router(config-int) #network 192.168.10.0
+Router(config-int) #network 11.0.0.0
+Router(config-int) #exit
+Router(config)#
+
+Dynamic NAT overload Configuration:
+Router(config-int) # access-list 45 permit 192.168.10.0 0.0.0.255
+Router(config-int) # ip nat pool deepa 60.0.0.1 60.0.0.1 netmask 255.255.255.255
+Router(config-int) # ip nat inside source list 45 pool deepa
+Router(config)#exit
+
+Implimentation:
+Router (config)#interface fastethernate0/0
+Router(config-int) #ip Nat inside
+Router(config)#exit
+Router(config) #interface serial0/0/0
+Router(config-int) #ip Nat outside
+Router(config-int) #exit
+Router(config)#
+
+
+
+Router-2: 
+Assigning IP Address to Fast Ethernet0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 192.168.10.1 255.255.255.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Assigning IP Address to Serial0/0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface Serial0/ 0/0
+Router(config-int) #ip address 11.0.0.1 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Configuring RIP Routing:
+Router>Enable
+Router# Configure Terminal
+Router(config)#router rip
+Router(config-int) #network 192.168.10.0
+Router(config-int) #network 11.0.0.0
+Router(config-int) #exit
+Router(config)#
+
+
+
+
+
+
+
+
+Verification of dynamic nat  overload table
+ 
+ 
+ 
+                    DHCP(dynamic host configuration protocol)
+
+DHCP is widely used in LAN environment to dynamically assign host IP address from a centralized server, which assign significantly reduces the overhead of administration of IP addresses. 
+
+ 
+
+
+
+
+
+
+Router-1: DHCP configuraion
+Assigning IP Address to Fast Ethernet0/0:
+Router>Enable
+Router# Configure Terminal
+Router(config)#interface fast Ethernet 0/0
+Router(config-int) #ip address 20.0.0.1 255.0.0.0
+Router(config-int) #no shutdown
+Router(config-int) #exit
+Router(config)#
+
+Assigning DHCP
+Router(config)#ip dhcp pool deepa
+Router(config-int) #network 20.0.0.0 255.0.0.0
+Router(config-int) #default-router 20.0.0.1
+Router(config-int) #exit
+Router(config)#
+
+ 
+ 
+ 
+                                                              DHCP snooping
+ DHCP Snooping is a layer 2 security technology incorporated into the operating system of a capable network switch that drops DHCP traffic determined to be unacceptable. It prevents unauthorized (rogue) DHCP servers offering IP addresses to DHCP clients. 
+Configuration of DHCP Snooping:
+
+ 
+
+
+
+
+
+
+
+Switch 1:
+switch>Enable
+Switch># Configure Terminal
+switch(config)#ip dhcp snooping
+switch(config-int) # ip dhcp snooping vlan 1
+switch(config-int) #no ip dhcp snooping info option
+switch(config-int) #interface f0/1
+switch(config)#ip dhcp snooping trust
+
+Switch 2:
+switch>Enable
+Switch># Configure Terminal
+switch(config)#ip dhcp snooping
+switch(config-int) # ip dhcp snooping vlan 1
+switch(config-int) #no ip dhcp snooping info option
+switch(config-int) #interface f0/1
+switch(config)#ip dhcp snooping trust
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                       
+   Dynamic ARP Inspection
+♦	ARP is used to learn the MAC address of devices with known IP addresses. 
+♦	For example, A PC will use ARP to learn the MAC address of its default gateway to communicate with external networks.
+              Typically there are two types, they are 
+               1. ARP request
+               2. Arp repl
+
+
+
+ 
+
+
+
+
+
+
+                                                                SYSLOG
+♦	 Syslog is an industry standard protocol for message logging
+♦	Syslog can be used to log events such as any changes in interface (up   down) changes in OSPF Neighbours, changes in EIGRP adjacency, system restart, etc.,
+♦	 The message can be displayed in the CLI, saved in the device RAM or sent to an external syslog server 
+♦	 Logs are essential when trouble shooting issues, examining 
+♦	the cause if incident etc., Syslog severity levels.
+
+Level	Keyword	Description
+0	Emergency	System is unusable
+1	Alert	Action must be taken immediately
+2	Critical	Critical Condition
+3	Error	Error conditions
+4	Warning	Warning conditions
+5	Notice	A Notification
+6	Informational	Information messages will be displayed
+7	Debugging	Debug level messages
+
+
+
+
+ 
+Syslog configuration:
+Router>enable
+Router#configure terminal
+Router(config)#logging 172.16.10.3
+Router(config)#logging host 172.16.10.3
+Router(config)#logging trap debugging
+Router(config)#router rip
+Router(config-router)#network 10.0.0.0
+Router(config-router)#network 172.16.10.0
+Router(config-router)#exit
+
+
+
+
+
+
+Verification of syslog table:
+
+ 
+                                                
+Timestamp configuration:
+    
+Router>enable
+Router#show running-configuration
+                                         
+ 
+Servicetime verification:
+ 
+
+
+
+
+                                                   Port Security
+♦	 It is security feature of cisco switches  It allows you to control which source “MAC” address to enter into the switch port
+♦	 If an unauthorized source “MAC” address enters the port an action will be taken (The default action is err-disabled) 
+         Enabling port security:
+
+switch>Enable
+Switch># Configure Terminal
+switch(config)#interface fa0/1
+switch(config-int) # switchport mode access
+switch(config-int) # switchport port-security
+switch(config-int) #exit
+switch(config)# interface fa0/2
+Switch(config-int) # switchport mode access
+Switch(config-int) # switchport port-security
+Switch(config-int) #exit
+
+
+Verification:
+Switch # show interface fastethernet0/1 switchport
+
+
+
+
+
+
+ 
+
+Switch # show port-security interface fastethernet0/1
+
+
+
+
+
+
+
+ 
+
+Switch # show interface fastethernet0/2 switchport
+
+
+
+ 
+
+
+
+
+Show# show port-security interface fastethernet0/2
+
+
+ 
+
+Show# show interface status
+
+
+  
+
+
+
+
+                           Virtual Local Area Network (VLAN)
+
+Dividing single broadcast domain into multiple broadcast domain is said to be Virtual Local Area Network (VLAN). 
+Configuration of VLAN:
+
+ 
+
+
+
+
+
+
+
+
+Switch>enable
+Switch#config terminal
+Switch(config)#vlan 10
+Switch(config – vlan)#name itlab
+Switch(config – vlan)#exit
+Switch(config)#vlan 20
+Switch(config – vlan)#name mechlab
+Switch(config – vlan)#exit
+Switch(config)#vlan 30
+Switch(config – vlan)#name cselab
+Switch(config – vlan)#exit
+Switch(config)#vlan 40
+Switch(config – vlan)#name ecelab
+Switch(config – vlan)#exit
+Switch(config)#vlan 50
+Switch(config – vlan)#name civillab
+Switch(config – vlan)#exit
+Switch(config)#vlan 60
+Switch(config – vlan)#name islab
+Switch(config – vlan)#exit
+Switch(config)#interface range fastethernet0/2 - 5
+Switch(confg-if-range)#switchport mode access
+Switch(confg-if-range)#switchport access vlan 10
+Switch(confg-if-range)#exit
+Switch(config)#interface range fastethernet0/6-9
+Switch(confg-if-range)#switchport mode access
+Switch(confg-if-range)#switchport access vlan 20
+Switch(confg-if-range)#exit
+Switch(config)#interface range fastethernet0/10-13
+Switch(confg-if-range)#switchport mode access
+Switch(confg-if-range)#switchport access vlan 30
+Switch(confg-if-range)#exit
+Switch(config)#interface range fastethernet0/14-17
+Switch(confg-if-range)#switchport mode access
+Switch(confg-if-range)#switchport access vlan 40
+Switch(confg-if-range)#exit
+Switch(config)#interface range fastethernet0/18-21
+Switch(confg-if-range)#switchport mode access
+Switch(confg-if-range)#switchport access vlan 50
+Switch(confg-if-range)#exit
+Switch(config)#interface range fastethernet0/22-24
+Switch(confg-if-range)#switchport mode access
+Switch(confg-if-range)#switchport access vlan 60
+Switch(confg-if-range)#exit
+Switch(config)#interface range gig0/1
+Switch(confg-if-range)#switchport mode access
+Switch(confg-if-range)#switchport access vlan 60
+Switch(confg-if-range)#exit
+
+Verification:
+
+ 
+
+
+
+
+                            Virtual Trunking Protocol (VTP)
+♦	VTP is a cisco proprietary protocol used by cisco switches to exchange VLAN information. 
+♦	You can synchronize VLAN information such as VLAN id with switches inside the same VTP domain. 
+♦	 VTP domain is a set of trunked switches with the matching VTP settings like domain name, password and VTP version. 
+♦	 Switches with in the same domain can share the VLAN information with each other. 
+♦	 VTP enables to create VLAN only in a single switch, that switch can propagate information about the VLAN to every other switch on the network and cause other switches to create. 
+♦	 If you want to delete a VLAN, you need to delete in one switch and it change automatically propagating to every other switch inside the same VTP domain. 
+♦	 VTP doesn’t update information about switch ports (interfaces) that are assigned to VLAN’s. 
+      VTP Configuration :
+
+ 
+
+
+
+
+Switch 1:
+Switch(config)#vtp domain shilpa
+Switch(config)#vtp password renuka
+Switch(config)#vtp version 3
+
+Switch 2:
+Switch(config)#vtp mode client
+Switch(config)#vtp domain shilpa
+Switch(config)#vtp password renuka
+
+Switch 3:
+Switch(config)#vtp mode client
+Switch(config)#vtp domain shilpa
+Switch(config)#vtp password renuka
+
+Switch 1:
+Switch(config)#int g0/1
+Switch(config)#switchport mode trunk
+Switch(config)#exit
+
+Switch 2:
+Switch(config)#int range 0/1-2
+Switch(config)#switchport mode trunk
+Switch(config)#exit
+
+Switch 3:
+Switch(config)#int g0/1
+Switch(config)#switchport mode trunk
+Switch(config)#exit
+
+
+                                                TELNET
+
+♦	Telnet stands for “Teletype network” or Telecommunication network.
+♦	It is a protocol used to access the CLI of a remote host which is not with us.
+♦	It was developed in 1969.
+♦	Telnet has been upgraded by SSH for more security.
+♦	Telnet sends data in plain text(data will not be encrypted).
+♦	The port no of telnet is 23.
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+Telnet configuration:
+     
+ Verification of telnet:
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
